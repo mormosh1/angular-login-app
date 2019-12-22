@@ -1,0 +1,25 @@
+.user-profile {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  img.user-pic {
+    max-width: 100%;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 0.20rem solid #fff;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  h4 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3rem;
+    span{
+      color: #ddd;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  }
+}

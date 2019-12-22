@@ -1,0 +1,44 @@
+.users-grid-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.first-section {
+  padding: 3rem 5rem;
+  .info{
+    p{
+      font-size: 0.95rem;
+    }
+  }
+}
+
+
+.warp-chips {
+    margin-top: 5rem;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    li {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+
+.preview-section {
+  border-left: 1px solid #eee;
+}
+
+button.mat-btn-right {
+  background: #f9f9f9;
+  float: right;
+  margin: 1rem;
+  outline: none;
+  i{
+    display: inline-block;
+    display: block;
+  }
+}
+

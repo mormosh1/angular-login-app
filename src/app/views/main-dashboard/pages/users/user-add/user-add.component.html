@@ -1,0 +1,75 @@
+<div class="warp-add-new-user">
+  <h4>
+    Add New User
+    <br />
+    <span>
+      the fields below are required.
+    </span>
+  </h4>
+  <form #f="ngForm" (ngSubmit)="onSubmitForm(f)">
+    <div class="form-container">
+      <mat-form-field class="space-field">
+        <input
+          matInput
+          type="text"
+          name="first_name"
+          ngModel
+          required
+          placeholder="First Name"
+        />
+        <mat-error>
+          please enter valid first name.
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="space-field">
+        <input
+          matInput
+          type="text"
+          name="last_name"
+          ngModel
+          required
+          placeholder="Last Name"
+        />
+        <mat-error>
+          please enter valid last name.
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="space-field">
+        <input
+          matInput
+          type="email"
+          name="email"
+          ngModel
+          required
+          email
+          placeholder="Email"
+        />
+        <mat-error>
+          please enter valid email address.
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="space-field">
+        <input
+          matInput
+          type="text"
+          name="avatar"
+          required
+          ngModel
+          placeholder="Picture Url"
+        />
+        <mat-error>
+          please enter valid picture Url.
+        </mat-error>
+      </mat-form-field>
+      <button
+        class="space-field"
+        type="submit"
+        mat-button
+        [disabled]="!f.valid"
+        [ngClass]="f.valid ? 'mat-orange' : 'not-allowed'"
+      >
+        Add User
+      </button>
+    </div>
+  </form>
+</div>

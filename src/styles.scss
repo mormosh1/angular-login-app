@@ -1,0 +1,100 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$loginApp-primary: mat-palette($mat-indigo);
+$loginApp-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$loginApp-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$loginApp-theme: mat-light-theme($loginApp-primary, $loginApp-accent, $loginApp-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($loginApp-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  direction: ltr;
+}
+
+.not-allowed {
+  cursor: not-allowed !important;
+}
+.warp-log {
+  max-width: 100%;
+  width: 25rem;
+  margin: 0 auto;
+  .form-style {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 2.5rem;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    h4 {
+      margin-bottom: 1rem;
+    }
+    form {
+      margin-bottom: 1rem;
+    }
+    button.space-field {
+      background: #ccc;
+      color: #fff;
+      padding: 0.35rem;
+      margin-top: 1rem;
+    }
+
+    a {
+      color: inherit;
+      font-size: 0.95rem;
+    }
+  }
+}
+.space-field {
+  display: block;
+  width: 100%;
+}
+
+.container-log {
+  background: #293b4d;
+  background-image: linear-gradient(180deg, #293a44, #0d1e2e);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 5rem;
+}
+
+button.mat-orange {
+  background-image: linear-gradient(180deg, #e99d11, orange) !important;
+  color: #fff;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.err {
+  color: #f44336;
+}
+
+
+

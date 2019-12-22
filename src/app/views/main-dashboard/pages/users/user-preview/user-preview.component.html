@@ -1,0 +1,23 @@
+<div class="user-preview" *ngIf="!!user">
+  <div
+    class="warp-blurred"
+    [ngStyle]="{ 'background-image': 'url(' + user.avatar + ')' }"
+  >
+    <div class="background-light">
+      <img [src]="user.avatar" [alt]="user.first_name" default="http://localhost:4200/assets/placeholder.jpg" class="img"  />
+      <h4>{{ user.first_name }} {{ user.last_name }}</h4>
+    </div>
+  </div>
+  <div class="details">
+    <p>
+      <span>id</span>
+      <br />
+      {{ user.id }}
+    </p>
+    <p>
+      <span>Email Adress</span>
+      <br />
+      {{ user.email }}
+    </p>
+  </div>
+</div>

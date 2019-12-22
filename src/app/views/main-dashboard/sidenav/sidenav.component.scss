@@ -1,0 +1,35 @@
+.warp-sidenav {
+  position: fixed;
+  width: 14%;
+  background: #293b4d;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  left: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  .menu button {
+    display: block;
+    border-radius: 0;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    font-weight: normal;
+    padding-left: 3rem;
+    outline: none;
+    .iconit {
+      display: inline-block;
+      width: 1.35rem;
+      margin-right: 0.5rem;
+      height: auto;
+      font-size: 1rem;
+      color: #ccc;
+    }
+  }
+}
+
+.active-link {
+  border-right: 5px solid orange;
+  background-color: rgba(0, 0, 0, 0.1);
+}

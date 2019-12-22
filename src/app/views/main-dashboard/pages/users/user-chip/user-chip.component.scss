@@ -1,0 +1,30 @@
+a.btn-mark {
+  border-radius: 45px;
+  margin: 0;
+  min-width: auto;
+  width: auto;
+
+  padding-left: 0;
+  border: 1px solid transparent;
+  .chip-box {
+    img {
+      width: 2.6rem;
+      height: 2.6rem;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+    span {
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.mark-chip{
+  border: 1px solid #ddd;
+  background: #eee;
+}
+
+

@@ -1,0 +1,40 @@
+<div class="users-grid-container">
+<div class="first-section">
+
+  <div class="info">
+    <h4>
+      Users
+      <button
+        mat-icon-button
+        class="mat-btn-right"
+        (click)="openBottomSheet()"
+        matTooltip="Add New User"
+      >
+        <i class="material-icons">
+          add
+        </i>
+      </button>
+    </h4>
+    <p>
+      if you want to get contact information to spesefic user, just select group
+      and then select <br> him from the list below
+    </p>
+  </div>
+
+
+    <div class="warp-chips">
+      <ul>
+        <li *ngFor="let user of users; let i = index">
+          <app-user-chip
+            [user]="user"
+            (markUserEvent)="onSelectedUser($event)"
+          ></app-user-chip>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="preview-section">
+    <app-user-preview [user]="selectedUser"></app-user-preview>
+  </div>
+</div>

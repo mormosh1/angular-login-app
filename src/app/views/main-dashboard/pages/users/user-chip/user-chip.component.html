@@ -1,0 +1,11 @@
+<a mat-button (click)="onSelectUser(user)" class="btn-mark">
+  <div class="chip-box">
+    <img
+      [src]="user.avatar"
+      [alt]="user.first_name"
+      default="http://localhost:4200/assets/placeholder.jpg"
+      class="img"
+    />
+    <span>{{ user.first_name }} {{ user.last_name }}</span>
+  </div>
+</a>

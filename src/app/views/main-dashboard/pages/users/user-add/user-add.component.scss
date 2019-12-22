@@ -1,0 +1,22 @@
+.warp-add-new-user {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  width: 30rem;
+  padding-bottom: 1rem;
+  form {
+    button {
+      background: #ccc;
+      margin-top: 1rem;
+    }
+  }
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 1rem;
+    span {
+      font-size: 0.95rem;
+      font-weight: normal;
+    }
+  }
+}
